@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ImageView
+        android:id="@+id/user_login_image_iv"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/custom_shadow"
+        android:layout_marginTop="22dp"
+        android:contentDescription="@string/user_login_image"
+        android:src="@drawable/user_login_icon"/>
+
+<EditText
+    android:id="@+id/et_email"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/et_password_0"
+    android:layout_alignStart="@+id/et_password_0"
+    android:layout_below="@+id/user_login_image_iv"
+    android:layout_marginTop="14dp"
+    android:background="@drawable/round_corners_tv"
+    android:ems="10"
+    android:hint="@string/email"
+    android:inputType="textEmailAddress"
+    android:textColor="#7f8c8d" />
+
+<EditText
+    android:id="@+id/et_password_0"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/et_password_1"
+    android:layout_alignStart="@+id/et_password_1"
+    android:layout_centerVertical="true"
+    android:background="@drawable/round_corners_tv"
+    android:ems="10"
+    android:hint="@string/password0"
+    android:inputType="textPassword"
+    android:textColor="#7f8c8d" >
+
+    <requestFocus />
+</EditText>
+
+<EditText
+    android:id="@+id/et_password_1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/et_password_0"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="14dp"
+    android:background="@drawable/round_corners_tv"
+    android:ems="10"
+    android:hint="@string/password1"
+    android:inputType="textPassword"
+    android:textColor="#7f8c8d" />
+
+<Button
+    android:id="@+id/btn_signup"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignEnd="@+id/et_email"
+    android:layout_alignRight="@+id/et_email"
+    android:layout_alignLeft="@+id/et_password_1"
+    android:layout_alignStart="@+id/et_email"
+    android:layout_below="@+id/et_password_1"
+    android:layout_marginTop="16dp"
+    android:background="@drawable/rounded_corners_buttons"
+    android:text="@string/signup"
+    android:textColor="#ffffff" />
+
+<Button
+    android:id="@+id/btn_login"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentRight="true"
+    android:layout_below="@+id/btn_signup"
+    android:layout_marginEnd="28dp"
+    android:layout_marginRight="28dp"
+    android:layout_marginLeft="22dp"
+    android:layout_marginStart="22dp"
+    android:layout_marginTop="14dp"
+    android:layout_toRightOf="@+id/user_login_image_iv"
+    android:layout_toEndOf="@+id/user_login_image_iv"
+    android:background="#ffffff"
+    android:text="@string/login"
+    android:textColor="#130f40" />
+
+</RelativeLayout>
