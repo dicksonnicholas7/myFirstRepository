@@ -114,7 +114,7 @@ tab_2.setOnTouchListener(new OnTouchListener() {
 		 * */
 			if(x==0){//trending
 				nav_V(3, "nav_v_", x).setVisibility(View.VISIBLE);
-			}else if (x==1) {
+			}else{
 				nav_V(3, "nav_v_", x).setVisibility(View.GONE);
 			}
 		}

@@ -37,7 +37,7 @@ public class Activity_Profile extends Activity {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);		
 		setContentView(R.layout.activity_profile_page);
-		
+		ctx=Activity_Profile.this;
 		
 		//initialization of variables
 	    tab_0 = (TextView )findViewById(R.id.nav_tv_0);		
@@ -99,6 +99,17 @@ public class Activity_Profile extends Activity {
 				return true;
 			}
 		});
+  		
+      	for(int x=0; x<3; x++) {
+      		/*All views are OFF by default.
+      		 * If the trending tab is active / selected, turn its view ON else it should remain off by default
+      		 * */
+      			if(x==2){//trending
+      				nav_V(3, "nav_v_", x).setVisibility(View.VISIBLE);
+      			}else{
+      				nav_V(3, "nav_v_", x).setVisibility(View.GONE);
+      			}
+      		}
 	}
 	
 	

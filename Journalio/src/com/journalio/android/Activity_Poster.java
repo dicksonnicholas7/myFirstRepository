@@ -56,6 +56,8 @@ public class Activity_Poster extends Activity {
 		
 		setContentView(R.layout.activity_poster);
 		
+		ctx=Activity_Poster.this;
+		
 		tab_0 = (TextView )findViewById(R.id.nav_tv_0);		
 		tab_2 = (TextView)findViewById(R.id.nav_tv_2);
 		
@@ -191,6 +193,17 @@ public class Activity_Poster extends Activity {
 				return true;
 			}
 		});
+		
+	for(int x=0; x<3; x++) {
+		/*All views are OFF by default.
+		 * If the trending tab is active / selected, turn its view ON else it should remain off by default
+		 * */
+			if(x==1){//trending
+				nav_V(3, "nav_v_", x).setVisibility(View.VISIBLE);
+			}else{
+				nav_V(3, "nav_v_", x).setVisibility(View.GONE);
+			}
+		}
 	}
 	
 	public TextView nav_TV(int total_num_i, String prefix_str, int tv_i){
