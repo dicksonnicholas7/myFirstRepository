@@ -11,8 +11,6 @@ import android.view.View.OnTouchListener;
 import android.widget.TextView;
 
 
-
-
 /****
  * 
  * Journalio App 
